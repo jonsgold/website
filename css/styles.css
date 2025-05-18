@@ -1,0 +1,33 @@
+
+body {
+  max-width: 34em;
+  background-color: #F4F4F4;
+}
+
+.page-title {
+  font-weight: bold;
+  margin: 25px 0px;
+}
+  .book-summary
+    table.book-details {
+      border-collapse: collapse;
+    }
+      td {
+        border: 1px solid;
+      }
+      .title {
+        font-weight: bold;
+        padding-right: 20px;
+      }
+
+    .book-content
+      .chapter {
+        padding-top: 25px;
+      }
+        .title {
+          font-weight: bold;
+
+        }
+        ul.summary {
+          list-style-type: "- ";
+        }
