@@ -5,31 +5,9 @@
 
   <body>
     <div w3-include-html="/website/navigation.html"></div>
-    <script defer src="/website/scripts/include-html.js"></script>
     <div class="page-title">Book Summary</div>
     <div class="book-summary">
-      <table class="book-details">
-        <tr>
-          <td class="title">Title</td>
-          <td class="value">45 Effective Ways for Hiring Smart! How to Predict Winners and Losers in the Incredibly Expensive People-Reading Game</td>
-        </tr>
-        <tr>
-          <td class="title">Author</td>
-          <td class="value">Pierre Mornell</td>
-        </tr>
-        <tr>
-          <td class="title">Published</td>
-          <td class="value">1998</td>
-        </tr>
-        <tr>
-          <td class="title">ISBN</td>
-          <td class="value">0898159725</td>
-        </tr>
-        <tr>
-          <td class="title">ISBN13</td>
-          <td class="value">9780898159721</td>
-        </tr>
-      </table>
+      <div w3-include-html="/website/details-table.html"></div>
 
       <div class="book-cover">
         <img src="/website/images/45-ways-for-hiring-smart-image.png" alt="Book cover" />
@@ -638,5 +616,10 @@
         </div>
       </div>
     </div>
+
+    <script>
+      localStorage.setItem("book-title", "45 Effective Ways for Hiring Smart! How to Predict Winners and Losers in the Incredibly Expensive People-Reading Game");
+    </script>
+    <script defer src="/website/scripts/include-html.js"></script>
   </body>
 </html>
