@@ -626,6 +626,11 @@
     </div>
 
     <script defer src="/website/scripts/include-html.js"></script>
-    <script>addValues();</script>
+    <script>
+      document.addEventListener("DOMContentLoaded", (event) => {
+        console.log("DOM fully loaded and parsed");
+        addValues();
+      });
+    </script>
   </body>
 </html>
