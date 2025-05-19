@@ -4,13 +4,30 @@
   </head>
 
   <body>
-    <div class="page-title">Book Summaries</div>
-    <ol class="toc-list">
-      <li>
-        <a href="45-ways-for-hiring-smart.html">
-          <span class="title">45 Effective Ways for Hiring Smart! How to Predict Winners and Losers in the Incredibly Expensive People-Reading Game</span>
-        </a>
-      </li>
-    </ol>
+    <div w3-include-html="/navigation.html"></div>
+    <script defer>
+      function includeHTML() {
+        var elements = document.querySelectorAll('[w3-include-html]');
+        elements.forEach(function(el) {
+          var file = el.getAttribute('w3-include-html');
+          if (file) {
+            fetch(file)
+              .then(response => {
+                if (response.ok) return response.text();
+                throw new Error('File not found');
+              })
+              .then(data => {
+                el.innerHTML = data;
+                el.removeAttribute('w3-include-html');
+                includeHTML();
+              })
+              .catch(error => {
+                el.innerHTML = "Error loading file.";
+              });
+          }
+        });
+      }
+      includeHTML();
+    </script>
   </body>
 </html>
