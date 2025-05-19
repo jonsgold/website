@@ -8,33 +8,38 @@ body {
 
 .page-title {
   font-weight: bold;
-  margin: 25px 0px;
+  margin-top: 25px;
 }
-  .book-summary
-    table.book-details {
-      border-collapse: collapse;
+
+.book-summary
+  .book-cover {
+    padding: 40px 0;
+  }
+
+  table.book-details {
+    border-collapse: collapse;
+  }
+  td {
+    border: 1px solid;
+  }
+    .title {
+      font-weight: bold;
+      padding-right: 20px;
     }
-      td {
-        border: 1px solid;
-      }
+
+  .book-content
+    .chapter {
+      padding-top: 40px;
+    }
       .title {
         font-weight: bold;
-        padding-right: 20px;
       }
-
-    .book-content
-      .chapter {
-        padding-top: 40px;
-      }
+      .strategy {
+        padding: 10px 0 0 40px;
         .title {
-          font-weight: bold;
+          padding-left: 20px;
         }
-        .strategy {
-          padding: 10px 0 0 40px;
-          .title {
-            padding-left: 20px;
-          }
-          ul {
-            list-style-type: "-";
-          }
+        ul {
+          list-style-type: "-";
         }
+      }
