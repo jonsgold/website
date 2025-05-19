@@ -10,13 +10,8 @@
       localStorage.setItem("book-isbn", "0898159725");
       localStorage.setItem("book-isbn13", "9780898159721");
 
-      // const promise = new Promise((result) => {
-      //   includeHTML();
-      // });
-      // const promise = includeHTML();
-
-      if (document.readyState !== 'loading') includeHTML().then(addValues())
-      else document.addEventListener("DOMContentLoaded", () => { includeHTML().then(addValues()) })
+      if (document.readyState !== 'loading') includeHTML().then(addValues)
+      else document.addEventListener("DOMContentLoaded", () => { includeHTML().then(addValues) })
     </script>
   </head>
 
