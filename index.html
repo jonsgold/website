@@ -4,30 +4,8 @@
   </head>
 
   <body>
-    <div w3-include-html="navigation.html"></div>
-    <script defer>
-      function includeHTML() {
-        var elements = document.querySelectorAll('[w3-include-html]');
-        elements.forEach(function(el) {
-          var file = el.getAttribute('w3-include-html');
-          if (file) {
-            fetch(file)
-              .then(response => {
-                if (response.ok) return response.text();
-                throw new Error('File not found');
-              })
-              .then(data => {
-                el.innerHTML = data;
-                el.removeAttribute('w3-include-html');
-                includeHTML();
-              })
-              .catch(error => {
-                el.innerHTML = "Error loading file.";
-              });
-          }
-        });
-      }
-      includeHTML();
-    </script>
+    <div w3-include-html="/website/navigation.html"></div>
+    <script defer src="/website/scripts/include-html.js"></script>
+    <div class="page-title">Welcome 1</div>
   </body>
 </html>
