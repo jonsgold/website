@@ -1,13 +1,16 @@
 <html>
   <head>
     <link rel="stylesheet" href="/website/css/styles.css">
+    <script>
+      localStorage.setItem("book-title", "45 Effective Ways for Hiring Smart! How to Predict Winners and Losers in the Incredibly Expensive People-Reading Game");
+    </script>
   </head>
 
   <body>
     <div w3-include-html="/website/navigation.html"></div>
     <div class="page-title">Book Summary</div>
     <div class="book-summary">
-      <div w3-include-html="/website/book-summaries/details-table.html"></div>
+      <div w3-include-html="details-table.html"></div>
 
       <div class="book-cover">
         <img src="/website/images/45-ways-for-hiring-smart-image.png" alt="Book cover" />
@@ -617,9 +620,6 @@
       </div>
     </div>
 
-    <script>
-      localStorage.setItem("book-title", "45 Effective Ways for Hiring Smart! How to Predict Winners and Losers in the Incredibly Expensive People-Reading Game");
-    </script>
     <script defer src="/website/scripts/include-html.js"></script>
   </body>
 </html>
