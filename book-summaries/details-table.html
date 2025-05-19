@@ -2,7 +2,7 @@
   <tr>
     <td class="title">Title</td>
     <!-- <td class="value">45 Effective Ways for Hiring Smart! How to Predict Winners and Losers in the Incredibly Expensive People-Reading Game</td> -->
-    <td class="value" id="book-title">bookTitle 2</td>
+    <td class="value" id="book-title">bookTitle 3</td>
   </tr>
   <tr>
     <td class="title">Author</td>
@@ -22,12 +22,4 @@
   </tr>
 </table>
 
-<script>
-  const bookTitle = localStorage.getItem("book-title");
-  const bookTitleElement = document.getElementById("book-title");
-  if (bookTitleElement) {
-    bookTitleElement.textContent = bookTitle;
-  } else {
-    console.error("Element with ID 'book-title' not found.");
-  }
-</script>
+<script defer src="/website/scripts/add-values.js"></script>
