@@ -15,8 +15,8 @@
       // });
       // const promise = includeHTML();
 
-      if (document.readyState !== 'loading') includeHTML().then(addValues)
-      else document.addEventListener("DOMContentLoaded", () => { includeHTML().then(addValues) })
+      if (document.readyState !== 'loading') includeHTML().then(addValues())
+      else document.addEventListener("DOMContentLoaded", () => { includeHTML().then(addValues()) })
     </script>
   </head>
 
