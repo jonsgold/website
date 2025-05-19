@@ -42,7 +42,8 @@ function addValues() {
   }
 }
 
-document.addEventListener("DOMContentLoaded", (event) => {
+document.addEventListener("DOMContentLoaded", async (event) => {
+  await new Promise(r => setTimeout(r, 2000));
   console.log("DOM fully loaded and parsed");
   addValues();
 });
