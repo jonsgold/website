@@ -41,3 +41,4 @@ function addValues() {
     console.error("Element with ID 'book-isbn13' not found.");
   }
 }
+addValues();
