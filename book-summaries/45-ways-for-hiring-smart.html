@@ -8,7 +8,6 @@
       localStorage.setItem("book-isbn", "0898159725");
       localStorage.setItem("book-isbn13", "9780898159721");
     </script>
-    <script src="/website/scripts/add-values.js"></script>
   </head>
 
   <body>
@@ -626,11 +625,6 @@
     </div>
 
     <script defer src="/website/scripts/include-html.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", (event) => {
-        console.log("DOM fully loaded and parsed");
-        addValues();
-      });
-    </script>
+    <script defer src="/website/scripts/add-values.js"></script>
   </body>
 </html>

@@ -41,3 +41,8 @@ function addValues() {
     console.error("Element with ID 'book-isbn13' not found.");
   }
 }
+
+document.addEventListener("DOMContentLoaded", (event) => {
+  console.log("DOM fully loaded and parsed");
+  addValues();
+});
