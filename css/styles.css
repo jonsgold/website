@@ -2,6 +2,8 @@
 body {
   max-width: 34em;
   background-color: #F4F4F4;
+  font-family: verdana;
+  font-size: small;
 }
 
 .page-title {
@@ -22,12 +24,17 @@ body {
 
     .book-content
       .chapter {
-        padding-top: 25px;
+        padding-top: 40px;
       }
         .title {
           font-weight: bold;
-
         }
-        ul.summary {
-          list-style-type: "- ";
+        .strategy {
+          padding: 10px 0 0 40px;
+          .title {
+            padding-left: 20px;
+          }
+          ul {
+            list-style-type: "-";
+          }
         }
