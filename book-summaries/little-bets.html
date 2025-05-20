@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/website/css/styles.css">
+    <script src="/website/scripts/add-values.js"></script>
+    <script>
+      localStorage.setItem("book-details-table", "book-details-table");
+      localStorage.setItem("book-title", "Little Bets. How Breakthrough Ideas Emerge From Small Discoveries.");
+      localStorage.setItem("book-author", "Peter Sims");
+      localStorage.setItem("book-publish-date", "2011");
+      localStorage.setItem("book-isbn", "1439170428");
+      localStorage.setItem("book-isbn13", "978-1439170427");
+    </script>
+  </head>
+
+  <body>
+    <div w3-include-html="/website/navigation.html"></div>
+    <div class="page-title">Book Summary</div>
+    <div class="book-summary">
+      <div id="book-details-table"></div>
+
+      <div class="book-cover">
+        <img src="/website/images/little-bets.png" alt="Book cover" />
+      </div>
+
+      <div class="book-content">
+        <div class="chapter">
+          <div class="title">Introduction</div>
+          <div class="summary">
+          </div>
+        </div>
+
+        <div class="chapter">
+          <div class="title">Chapter 1: Big Bets vs Little Bets</div>
+          <div class="summary">
+          </div>
+        </div>
+
+        <div class="chapter">
+          <div class="title">Chapter 2: The Growth Mind-set</div>
+          <div class="summary">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script defer src="/website/scripts/include-html.js"></script>
+    <script>addTable();</script>
+  </body>
+</html>

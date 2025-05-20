@@ -22,10 +22,6 @@ body {
   td {
     border: 1px solid;
   }
-    .title {
-      font-weight: bold;
-      padding-right: 20px;
-    }
 
   .book-content
     .chapter {
