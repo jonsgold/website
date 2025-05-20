@@ -1,4 +1,4 @@
-function addValues() {
+function addTableValues() {
   const bookTitle = localStorage.getItem("book-title");
   const bookAuthor = localStorage.getItem("book-author");
   const bookPublishDate = localStorage.getItem("book-publish-date");
@@ -41,4 +41,22 @@ function addValues() {
     console.error("Element with ID 'book-isbn13' not found.");
   }
 }
-addValues();
+
+function addTable() {
+  const bookTable = localStorage.getItem("book-details-table");
+  const bookTableElement = document.getElementById(bookTable);
+  fetch('details-table.html')
+    .then(response => {
+      if (response.ok) return response.text();
+      throw new Error('File not found');
+    })
+    .then(data => {
+      bookTableElement.innerHTML = data;
+    })
+    .then(() => {
+      addTableValues();
+    })
+    .catch(error => {
+      bookTableElement.innerHTML = "Error loading file.";
+    });
+}
