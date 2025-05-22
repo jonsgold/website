@@ -2,6 +2,7 @@
 body {
   max-width: 34em;
   background-color: #F4F4F4;
+  --highlight-color: #EEECCC;
   font-family: verdana;
   font-size: small;
 }
