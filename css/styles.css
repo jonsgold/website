@@ -12,6 +12,10 @@ body {
   margin: 25px 0px;
 }
 
+.date {
+  margin: 20px 0px 0px 0px;
+}
+
 .book-summary
   .book-cover {
     padding-top: 20px;
