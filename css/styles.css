@@ -5,6 +5,9 @@ body {
   --highlight-color: #EEECCC;
   font-family: verdana;
   font-size: small;
+  #ai {
+    background-color: var(--highlight-color);
+  }
 }
 
 .page-title {
